@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Zadanie 9</title>
+    <script language="JavaScript">
+      function czas() {
+          var D1 = prompt("Pierwszy dzień: ", "");
+          var G1 = prompt("Pierwsza godzina: ", "");
+          var D2 = prompt("Drugi dzień: ", "");
+          var G2 = prompt("Druga godzina: ", "");
+          var D1_dab = parseFloat(D1);
+          var G1_dab = parseFloat(G1);
+          var D2_dab = parseFloat(D2);
+          var G2_dab = parseFloat(G2);
+          var suma;
+          suma = D1_dab - D2_dab;
+          suma = suma - 1;
+          suma = suma * 24;
+          suma = suma + (24 - G2_dab);
+          suma = suma + G1_dab;
+          suma = suma * 60 * 60;
+          var wynik = "Różnica sekund między dniem: " + D1_dab + "  i godziną " + G1_dab + " a dniem " + D2_dab + " i  godziną " + G2_dab + " to " + suma + " sekund <br>";
+          var wynik_col = wynik.fontcolor("green");
+          var wynik_res = wynik_col.fontsize("37px");
+          document.write(wynik_res);
+        }
+       
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Zadanie 9" onclick="czas()">
+        
+    </form>
+</body>
+</html>
