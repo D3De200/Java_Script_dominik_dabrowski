@@ -1,0 +1,31 @@
+<html>
+    <h1 align=center>KOD:</h1>
+<.html>
+    <.head>
+      <.title>Zadanie 8<./title>
+      <.script language="JavaScript">
+          function czas() {
+              var D1_dab = prompt("Pierwszy dzień=", "");
+              var D2_dab = prompt("Drugi dzień=", "");
+              var suma;
+              suma = D1_dab - D2_dab;
+              suma = suma * 24 * 60 * 60;
+              var wynik = "Różnica sekund między dniem 1 " + D1_dab + "  a dniem 2 " + D2_dab + " to " + suma + " sekund ";
+              var wynik_col = wynik.fontcolor("green");
+              var wynik_res = wynik_col.fontsize("37px");
+              document.write(wynik_res);
+          }
+          function kod() {
+              window.open("zadanie8_kod.html", "zadanie8_kod", "toolbar=no,directories=no,menubar=no,height=800,width=1500,top=150,left=200");
+          }
+      <./script>
+    <./head>
+    <.body>
+        <.form>
+            <.input type="button" name="przycisk" value="Zadanie 8" onclick="czas()">
+            <.input type="button" name="przycisk" value="Kod " onclick="kod()">
+        <./form>
+    <./body>
+    <./html>
+    </html>
+    
