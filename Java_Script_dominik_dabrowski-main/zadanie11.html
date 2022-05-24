@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Zadanie 11</title>
+    <script language="JavaScript">
+      function egipskie() {
+          var m = prompt("Podaj wartość dla  m =", "");
+          var m_dab = parseFloat(m);
+          var wynik = "Równanie: <br> 1/" + m_dab + " = 1/" + (m_dab + 1) + " + 1/" + (m_dab * (m_dab + 1) + 1) + " + 1/" + ((m_dab * (m_dab + 1)) * (m_dab * (m_dab + 1) + 1)) + "<br>";
+          document.write(wynik);
+        }
+        
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Zadanie 11" onclick="egipskie()">
+        
+    </form>
+</body>
+</html>

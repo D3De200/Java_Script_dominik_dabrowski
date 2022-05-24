@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <title>Zadanie 13</title>
+        <script language="JavaScript">
+            function zadanie13() {
+                var A = prompt("Podaj wartość dla  A =", "");
+                var B = prompt("Podaj wartość dla  B =", "");
+                var A_dab = parseFloat(A);
+                var B_dab = parseFloat(B);
+                var wynik = "(" + A_dab + " + " + B_dab + "^3 = " + A_dab + "^3 + 3 * ((" + A_dab + ")^" + B_dab + ") * (" + B_dab + ") + 3 * (" + A_dab + ") * ((" + B_dab + ")^" + B_dab + ") + " + B_dab + "^3 = " + (A_dab * A_dab * A_dab) + " + " + (3 * ((A_dab * A_dab) * 2)) + " + " + ((3 * A_dab) * (B_dab * B_dab)) + " + " + B_dab * B_dab * B_dab + " = " + ((A_dab * A_dab * A_dab) + (3 * ((A_dab * A_dab) * 2)) + ((3 * A_dab) * (B_dab * B_dab)) + B_dab * B_dab * B_dab) + "<br>";
+                document.write(wynik);
+            }
+           
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk" value="Zadanie 13" onclick="zadanie13()">
+            
+        </form>
+    </body>
+    </html>

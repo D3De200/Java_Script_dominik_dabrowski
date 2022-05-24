@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Zadanie 15</title>
+        <script language="JavaScript">
+            function rownanie_dab() {
+                var A = prompt("Podaj wartość x1 =", "");
+                var B = prompt("Podaj wartość x2 =", "");
+                var x1_dab = parseFloat(A);
+                var x2_dab = parseFloat(B);
+                var y1 = parseFloat();
+                y1 = + Math.pow(x1_dab, 7 / 9) + "";
+                y1 = +y1 * 3 + "";
+                var y2 = parseFloat();
+                y2 = +((2 * Math.cos(x1_dab)) + (2 * Math.sin(x1_dab))) + "";
+                var y3 = parseFloat();
+                y3 = + (Math.cbrt(Math.pow(x1_dab, 5) + (2 * Math.pow(x2_dab, 4)))) * Math.abs(x1_dab - x2_dab) + "";
+                var wynik;
+                wynik = "wczytane liczby to <br>x1 = " + x1_dab + "        x2 = " + x2_dab + "<br> y1 = " + y1 + "<br> y2 = " + y2 + "<br> y3 = " + y3 + "";
+                document.write(wynik);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk" value="Zadanie 15" onclick="rownanie_dab()">
+            <
+        </form>
+    </body>
+    </html>
